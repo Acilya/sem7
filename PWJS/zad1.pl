@@ -27,7 +27,7 @@ for $n (@files)
 		{
 			$rights .= $mode & (1 << $i) ? @letters[$i % 3] : '-';
 		}
-		if (@ARGV[1] eq "-L" or @ARGV[1] eq "-L" or @ARGV[0] eq "-L")
+		if (@ARGV[1] eq "-L" or @ARGV[2] eq "-L" or @ARGV[0] eq "-L")
 		{
 			$name  = sprintf "%10s", getpwuid($uid);
 			print "$rights $time $bytes $name $n\n";
