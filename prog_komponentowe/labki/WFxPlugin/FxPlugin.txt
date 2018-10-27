@@ -1,0 +1,43 @@
+https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Installation
+bin\activate
+mkdir ttt
+cd ttt
+cfx init
+cfx test
+cfx run
+cfx xpi
+touch pod windows: copy /b file.png +,,
+
+lib\main.js
+
+var buttons = require('sdk/ui/button/action');
+var tabs = require("sdk/tabs");
+
+var button = buttons.ActionButton({
+  id: "miotilla-link",
+  label: "Visit Miotilla",
+  icon: {
+    "16": "./edit-clear-2-16.png",
+    "32": "./edit-clear-2-32.png",
+    "64": "./edit-clear-2-64.png"
+  },
+  onClick: handleClick
+});
+
+function handleClick(state) {
+  tabs.open("http://www.mozilla.org/");
+}
+
+
+to Firefox 29 :. code is equivalent, except that the icon will appear in the bottom-right of the browser window:
+
+var widgets = require("sdk/widget");
+var tabs = require("sdk/tabs");
+var widget = widgets.Widget({
+  id: "mozilla-link",
+  label: "Visit Miotilla",
+  contentURL: require("sdk/self").data.url("edit-clear-2-16.png"),
+  onClick: function() {
+    tabs.open("http://www.mozilla.org/");
+  }
+});

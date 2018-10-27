@@ -1,0 +1,125 @@
+int i;
+
+for(i=0,j=0; i + 1 < 10 ; i++)
+{
+	a=1;
+}
+
+int j=0;
+
+for(; j + 1 < 10 ; j++)
+{
+	a=1;
+}
+
+blok_kodu:
+	przypisanie
+|	petla_for
+;
+
+petla_for: for_poczatek cia³o_pêtli
+
+void foo()
+{
+ for(i=0; i + 1 < 10 ; i++)
+ {
+	a=1;
+ }
+ a=1;
+}
+petla_while
+: SK_WHILE '(' warunek ')' cia³o_pêtli
+
+for_poczatek
+:SK_FOR '(' ';' ';'  ')' 
+|SK_FOR '(' ';' ';' operacja_arytmetyczna ')' 
+|SK_FOR '(' przypisanie ';' warunek       \
+ ';' operacja_arytmetyczna ')' 
+|SK_FOR '(' ';' warunek                   \
+ ';' operacja_arytmetyczna ')' 
+
+przypisanie:
+	ID operator_przypisania wyr
+
+warunek: 
+	wyr operator_porownania wyr
+
+operacja_arytmetyczna:
+	przypisanio_wyrazenie
+
+cia³o_pêtli:
+	'{' blok_kodu '}'
+	| blok_kodu 
+
+przypisanio_wyrazenie:
+:przypisanie
+|inkrementacja
+|dekrementacja
+
+inkrementacja:
+	ID "++"
+dekrementacja:
+	"++" ID
+
+operator_przypisania:
+ '='
+ "+="
+ "-="
+ "*="
+ "/="
+
+operator_porownania:
+ "==" (to powinno byæ zapisane jako OP_POR)
+ "<="
+ ">="
+ "!="
+ '<'
+ '>'
+a=1+5*7;
+a=(1+5)*7;
+
+a 1 5 7 * + =;
+=w+
++w*
+*7
+*5
++1
+=a
+
+w* = 5 * 7
+w+ = 1 + w*
+w= = a = w+
+
+a 1 5 + 7 * =;
+
+=w*
+*7
+*w+
++5
++1
+=a
+w+ = 1 + 5
+w* = w+ * 7
+w= = a = w*
+
+wyr
+	:wyr '+' skladnik	{printf("wyrazenie z + \n"); 
+		fprintf(rpnfile, " + ");}
+	|wyr '-' skladnik	{printf("wyrazenie z - \n");}
+	|skladnik		{printf("wyrazenie pojedyncze \n");}
+	;
+
+skladnik
+	:skladnik '*' czynnik	{printf("skladnik z * \n");}
+	|skladnik '/' czynnik	{printf("skladnik z / \n");}
+	|czynnik		{printf("skladnik pojedynczy \n");}
+	;
+czynnik
+	:ID	{printf("czynnik znakowy\n");
+		 fprintf(rpnfile, " %s ", $1)
+		} 
+	|LC			
+		{printf("czynnik liczbowy\n");
+  		 fprintf(rpnfile, " %d ", $1)}
+	|'(' wyr ')'		{printf("wyrazenie w nawiasach\n");}
+	;

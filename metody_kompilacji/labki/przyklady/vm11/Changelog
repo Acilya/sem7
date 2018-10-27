@@ -1,0 +1,13 @@
+Dodano obsluge PUSH i POP
+Dodano obcinanie koncowek przy zapisie do rejestrow calkowitych
+Poprawiono indeksowanie rejestrami
+Dodano obs³ugê indeksowania wartoœci¹ rejestru
+Dodano obsluge czasu wykonywania
+Obsluga plików podanych z linii komend
+Obsluga wielkich i ma³ych liter
+Poprawione wy¶wietlanie pamiêci
+Sta³a okre¶laj±ca rozmiar pamiêci
+Prosta maszyna wirtualna, w Pythonie, z prostym przyk³adem
+Dodano potegowanie
+Poprawka do potegowania liczb ujemnych
+Poprawka do wyciagania wartosci z rejestru zmiennoprzecinkowego

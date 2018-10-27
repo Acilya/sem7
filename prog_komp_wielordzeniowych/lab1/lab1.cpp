@@ -10,7 +10,7 @@ int main()
 	{
 		omp_set_num_threads(j);
 		start = omp_get_wtime();
-		#pragma omp parallel   // specify the code between the curly brackets is part of an OpenMP parallel section
+		#pragma omp parallel for   // specify the code between the curly brackets is part of an OpenMP parallel section
 		for (int i = 0; i < 1000000; i++)
 			a[i] = 0.1 * sin(a[i]);
 		end = omp_get_wtime();

@@ -1,0 +1,23 @@
+                                          
+def.y ->def.tab.c , def.tab.h
+def.yy->def.tab.cc, def.tab.hh
+
+Makefile:
+def.y   def.tab.c ,
+  |         |
+  V         V
+def.yy  def.tab.cc,
+nowa zmienna: CPP=g++
+CC -> CPP w dwóch miejscach:
+  kompilacja def.tab.cc
+  kompilacja ca³oœci 
+  
+def.yy:
+extern "C" int yylex();
+extern "C" int yyerror(const char *msg, ...);
+using namespace std;
+
+zx.l:
+int yyerror(const char *msg, ...);
+int yyerror(const char *msg, ...){
+

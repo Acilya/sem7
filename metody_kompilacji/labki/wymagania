@@ -1,0 +1,27 @@
+sudo apt-get install flex bison
+
+flex z1.l
+gcc -c lex.yy.c
+gcc lex.yy.o -o kompilator -ll (lub -lfl)
+./kompilator in1.txt
+
+bison - makefile z z3 (make):
+bison -d def.y
+gcc -c def.tab.c
+gcc lex.yy.o def.tab.o -o leks -ll
+
+Minimum (3):
+- typy int i double - stałe (literały) i zmienne tych typów
+- wyrażenia arytmetyczne (=, +, -, *, /)
+- prosty if (bez else i co najwyżej jedno zagnieżdżenie)
+- wypisywanie int i double
+- wpisywanie int i double z konsoli
+Zwolnienie z egzaminu (4):
+- pętla for lub while
+- typ string (tylko wypisywanie, brak operacji)
+- tablice jednowymiarowe
+- złożony if (dużo zagnieżdżeń) z else
+
+https://pl.wikibooks.org/wiki/Flex_i_Bison
+http://dinosaur.compilertools.net/flex/manpage.html
+http://www.gnu.org/software/bison/manual/bison.html#Rpcalc-Input

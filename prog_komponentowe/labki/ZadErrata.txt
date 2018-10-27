@@ -1,0 +1,12 @@
+http://websrv.bzp.uzp.gov.pl/BZP_PublicWebService.asmx?WSDL
+
+       var service = new ServicePublicOrders.BZP_PublicWebServiceSoapClient("BZP_PublicWebServiceSoap");
+            var rodzajZamawiajacego = Convert.ToInt32(txtrodzajZamawiajacego.Text);
+            var rodzajZamowienia = Convert.ToInt32(txtRodzajZamowienia.Text);
+            var wojewodztwo = txtWojewodztwo.Text;
+            var ds = service.ogloszeniaZP400KryteriaWyszukiwaniaDataSet(rodzajZamawiajacego, rodzajZamowienia, 99, "",
+                "", "", "", "", 99, "", "", wojewodztwo, -1, -1);
+
+Proponowany rodzaj zamawiaj¹cego: 99
+Proponowany rodzaj zamówienia: 2
+Województwo: Zachodniopomorskie
