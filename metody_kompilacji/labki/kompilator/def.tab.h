@@ -46,27 +46,22 @@ extern int yydebug;
   enum yytokentype
   {
     ID = 258,
-    SD = 259,
-    LC = 260,
-    LR = 261,
-    IF = 262,
-    ELSE = 263,
-    FOR = 264,
-    INT = 265,
-    FLOAT = 266,
-    EQ = 267,
-    NE = 268,
-    LT = 269,
-    GT = 270,
-    ADD = 271,
-    SUB = 272,
-    MUL = 273,
-    DIV = 274,
-    INPUTI = 275,
-    PRINTI = 276,
-    PRINTF = 277,
-    INPUTF = 278,
-    PRINTS = 279
+    LC = 259,
+    LR = 260,
+    IF = 261,
+    ELSE = 262,
+    FOR = 263,
+    INT = 264,
+    FLOAT = 265,
+    EQ = 266,
+    NE = 267,
+    LT = 268,
+    GT = 269,
+    INPUTI = 270,
+    INPUTF = 271,
+    PRINTI = 272,
+    PRINTF = 273,
+    PRINTS = 274
   };
 #endif
 
@@ -78,9 +73,9 @@ union YYSTYPE
 #line 9 "def.y" /* yacc.c:1909  */
 char *text;
 int	ival;
-float fval
+float fval;
 
-#line 84 "def.tab.h" /* yacc.c:1909  */
+#line 79 "def.tab.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;

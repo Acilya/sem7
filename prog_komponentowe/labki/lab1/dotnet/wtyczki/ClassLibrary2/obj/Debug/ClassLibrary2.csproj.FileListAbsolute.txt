@@ -1,0 +1,12 @@
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary2\obj\Debug\ClassLibrary2.csprojAssemblyReference.cache
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary2\obj\Debug\ClassLibrary2.csproj.CoreCompileInputs.cache
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary2\obj\Debug\ClassLibrary2.pdb
+D:\dotnet\wtyczki\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+D:\dotnet\wtyczki\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+D:\dotnet\wtyczki\ClassLibrary2\obj\Debug\ClassLibrary2.csprojAssemblyReference.cache
+D:\dotnet\wtyczki\ClassLibrary2\obj\Debug\ClassLibrary2.csproj.CoreCompileInputs.cache
+D:\dotnet\wtyczki\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+D:\dotnet\wtyczki\ClassLibrary2\obj\Debug\ClassLibrary2.pdb

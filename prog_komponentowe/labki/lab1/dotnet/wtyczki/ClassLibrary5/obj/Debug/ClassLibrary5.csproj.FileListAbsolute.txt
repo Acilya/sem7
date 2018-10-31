@@ -1,0 +1,11 @@
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary5\bin\Debug\ClassLibrary5.dll
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary5\bin\Debug\ClassLibrary5.pdb
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary5\obj\Debug\ClassLibrary5.csproj.CoreCompileInputs.cache
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary5\obj\Debug\ClassLibrary5.dll
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary5\obj\Debug\ClassLibrary5.pdb
+D:\dotnet\wtyczki\ClassLibrary5\bin\Debug\ClassLibrary5.dll
+D:\dotnet\wtyczki\ClassLibrary5\bin\Debug\ClassLibrary5.pdb
+D:\dotnet\wtyczki\ClassLibrary5\obj\Debug\ClassLibrary5.csprojAssemblyReference.cache
+D:\dotnet\wtyczki\ClassLibrary5\obj\Debug\ClassLibrary5.csproj.CoreCompileInputs.cache
+D:\dotnet\wtyczki\ClassLibrary5\obj\Debug\ClassLibrary5.dll
+D:\dotnet\wtyczki\ClassLibrary5\obj\Debug\ClassLibrary5.pdb

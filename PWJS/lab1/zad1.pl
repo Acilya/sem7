@@ -21,11 +21,11 @@ for $n (@files)
 		($sec, $min, $hour, $day, $month, $year) = localtime $mtime;
 		$time = sprintf "%02d:%02d:%02d %04d-%02d-%02d", $hour, $min, $sec, ($year+1900), ($mon+1), $day;
 		$bytes = sprintf "%08d", $size;
-		$rights = -d $dirname.'/'.$n ? 'd' : '-';
+		$rights = -d $dirname.'/'.$n ? 'd' : '-';    # -d - operator zwraca, czy cos jest folderem
 		@letters = ("x", "w", "r");
 		for($i = 8; $i >= 0; $i--)
 		{
-			$rights .= $mode & (1 << $i) ? @letters[$i % 3] : '-';
+			$rights .= $mode & (1 << $i) ? @letters[$i % 3] : '-';    # . - laczenie stringow
 		}
 		if (@ARGV[1] eq "-L" or @ARGV[2] eq "-L" or @ARGV[0] eq "-L")
 		{

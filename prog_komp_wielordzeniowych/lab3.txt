@@ -1,0 +1,8 @@
+1. Chodzi mnożenie macierzy. Trzeba wybrać sobie kolejność mnożenia. Za pierwszym razem mierzymy czas wersji sekwencyjnej, później kolejno dla 2,3 i 4 wątków (8 nie jest wymagane). Obliczamy przyspieszenie dla wielowatkowych czasow wzgledem sekwencyjnego (t = sw/si, gdzie sw to czas wielowatkowy, si czas sekwencyjny).
+2. To co w pierwszym, ale z transponowanym drugim czynnikiem mnozenia - chodzi o to aby iterować wierszami a nie kolumnami, transponowanie mozna wliczac do czasu trwania.
+3.Pozniej nalezy porównać wyniki z drugiego z pierwszym punktem - generalnie powinno być szybciej w drugim.
+4 Porownać pomiary d = (a*b) *c i d = a*(b*c). Trzeba tez zliczyć ilość iteracji w petli dla obu.
+5. Zrobić sprawozdanie. Kluczowe fragmenty kodu, pomiary, wnioski
+
+Pierwsze trzy punkty są na 3, cztery punkty to 4.
+Aby dostać 5, oprócz wszystkich punktów trzeba opisać algorytm Matrix Multiply Chain Order ktory wyznacza kolejność mnozen o mniejszej liczbie iteracji. 

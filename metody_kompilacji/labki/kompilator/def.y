@@ -8,37 +8,28 @@
 %union 
 {char *text;
 int	ival;
-float fval};
+float fval;};
 
 %type <text> wyr
 %token <text> ID
-%token <text> SD
 %token <ival> LC
 %token <fval> LR
-%token IF
-%token ELSE
-%token FOR
-%token INT
-%token FLOAT
-%token EQ
-%token NE
-%token LT
-%token GT
-%token ADD
-%token SUB
-%token MUL
-%token DIV
-%token INPUTI
-%token PRINTI
-%token PRINTF
-%token INPUTF
-%token PRINTS
+%token IF ELSE FOR
+%token INT FLOAT
+%token EQ NE LT GT
+%token INPUTI INPUTF PRINTI PRINTF PRINTS
 %left '+' '-'
 %left '*' '/'
-%start wyr
 
 
 %%
+warunek 
+	:wyr EQ wyr		{printf("porownanie ==\n");}
+	|wyr NE wyr		{printf("porownanie !=\n");}
+	|wyr LT wyr		{printf("porownanie <=\n");}
+	|wyr GT wyr		{printf("porownanie >=\n");}
+	|wyr '>' wyr		{printf("porownanie >\n");}
+	|wyr '<' wyr		{printf("porownanie <\n");}
 wyr
 	:wyr '+' skladnik	{printf("wyrazenie z + \n");}
 	|wyr '-' skladnik	{printf("wyrazenie z - \n");}
@@ -51,7 +42,8 @@ skladnik
 	;
 czynnik
 	:ID			{printf("czynnik znakowy id: %s\n", $1);} 
-	|LC			{printf("czynnik liczbowy: %s\n", $1);}
+	|LC			{printf("czynnik liczbowy: %d\n", $1);}
+	|LR			{printf("liczba rzeczywista: %f\n", $1);}
 	|'(' wyr ')'		{printf("wyrazenie w nawiasach\n");}
 	;
 

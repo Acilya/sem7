@@ -1,0 +1,12 @@
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary3\bin\Debug\ClassLibrary3.dll
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary3\bin\Debug\ClassLibrary3.pdb
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary3\obj\Debug\ClassLibrary3.csprojAssemblyReference.cache
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary3\obj\Debug\ClassLibrary3.csproj.CoreCompileInputs.cache
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary3\obj\Debug\ClassLibrary3.dll
+C:\Users\Jula\Documents\dotnet\wtyczki\ClassLibrary3\obj\Debug\ClassLibrary3.pdb
+D:\dotnet\wtyczki\ClassLibrary3\bin\Debug\ClassLibrary3.dll
+D:\dotnet\wtyczki\ClassLibrary3\bin\Debug\ClassLibrary3.pdb
+D:\dotnet\wtyczki\ClassLibrary3\obj\Debug\ClassLibrary3.csprojAssemblyReference.cache
+D:\dotnet\wtyczki\ClassLibrary3\obj\Debug\ClassLibrary3.csproj.CoreCompileInputs.cache
+D:\dotnet\wtyczki\ClassLibrary3\obj\Debug\ClassLibrary3.dll
+D:\dotnet\wtyczki\ClassLibrary3\obj\Debug\ClassLibrary3.pdb
